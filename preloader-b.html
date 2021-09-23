@@ -36,7 +36,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         transform-style: preserve-3d;
-        animation: 2s linear 2s infinite pulse;
+        animation: 2s linear 2.5s infinite pulse;
         transform-origin: 0 50%;
         transition: 1.5s;
     }
@@ -50,22 +50,22 @@
 
     .tree-one {
         transition: 2.5s;
-        animation: 3s cubic-bezier(0, 0.575, 0.565, 1) forwards   scale-up-1;
+        animation: 3.5s cubic-bezier(0, 0.575, 0.565, 1) forwards   scale-up-1;
     }
 
     .tree-two {
         transition: 2.5s;
-        animation: 3s cubic-bezier(0, 0.575, 0.565, 1) forwards  scale-up-4;
+        animation: 3.5s cubic-bezier(0, 0.575, 0.565, 1) forwards  scale-up-4;
     }
 
     .tree-third {
         transition: 2.5s;
-        animation: 3s cubic-bezier(0, 0.575, 0.565, 1) forwards  scale-up-3;
+        animation: 3.5s cubic-bezier(0, 0.575, 0.565, 1) forwards  scale-up-3;
     }
 
     .tree-two-1 {
         transition: 2.5s;
-        animation: 3s cubic-bezier(0, 0.575, 0.565, 1) forwards  scale-up-2;
+        animation: 3.5s cubic-bezier(0, 0.575, 0.565, 1) forwards  scale-up-2;
     }
 
 
@@ -98,15 +98,15 @@
             transform: scale(0);
             transform-origin: 50% 100%;
         }
-        20% {
+        10% {
             opacity: 0;
-            transform: scale(0.8) rotateY(-140deg) perspective(600px);
+            transform: scale(0.8) rotateY(-100deg) perspective(600px);
             transform-origin: 50% 100%;
 
         }
-        25% {
+        40% {
             opacity: 0;
-            transform: scale(1.05) rotateY(-140deg) perspective(600px);
+            transform: scale(1.05) rotateY(-100deg) perspective(600px);
             transform-origin: 50% 100%;
 
         }
@@ -127,13 +127,13 @@
             transform: scale(0);
             transform-origin: 50%;
         }
-        25% {
+        35% {
             opacity: 0;
             /*transform: scale(0);*/
             transform-origin: 50%;
             transform: scale(0) perspective(600px) rotateY(-140deg);
         }
-        50% {
+        45% {
             opacity:0;
             transform: scale(1.05) perspective(600px) rotateY(-140deg);
             transform-origin: 50%;
@@ -156,13 +156,12 @@
             transform: scale(0);
             transform-origin: 50%;
         }
-        45% {
+        40% {
             opacity: 0;
-            /*transform: scale(0);*/
             transform-origin: 50%;
             transform: scale(0) perspective(600px) rotateY(-140deg);
         }
-        60% {
+        45% {
             opacity: 0;
             transform: scale(1.05) perspective(600px) rotateY(-140deg);
             transform-origin: 50%;
