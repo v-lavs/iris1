@@ -36,8 +36,8 @@
         top: 50%;
         transform: translate(-50%, -50%);
         transform-style: preserve-3d;
-        animation: 2s linear infinite pulse;
-        /*animation: 2s linear 2.2s infinite pulse;*/
+        /*animation: 2s linear infinite pulse;*/
+        animation: 2s linear 2.2s infinite pulse;
         transform-origin: 0 50%;
         transition: 1.5s;
     }
@@ -51,7 +51,7 @@
 
     .tree-one {
         transition: 2.5s;
-        animation: 2s cubic-bezier(0, 0.575, 0.565, 1) infinite  bottom-anim;
+        animation: 2s cubic-bezier(0, 0.575, 0.565, 1) forwards  bottom-anim;
     }
 
     .tree-two {
@@ -177,7 +177,7 @@
 
     @keyframes pulse {
         0%{
-            transform: scale(.5) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
         }
 
         50%{
@@ -185,7 +185,7 @@
         }
 
         100%{
-            transform: scale(.95) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
         }
     }
 
