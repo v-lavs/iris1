@@ -36,7 +36,8 @@
         top: 50%;
         transform: translate(-50%, -50%);
         transform-style: preserve-3d;
-        animation: 2s linear 2.2s infinite pulse;
+        animation: 2s linear infinite pulse;
+        /*animation: 2s linear 2.2s infinite pulse;*/
         transform-origin: 0 50%;
         transition: 1.5s;
     }
@@ -50,7 +51,7 @@
 
     .tree-one {
         transition: 2.5s;
-        animation: 2s cubic-bezier(0, 0.575, 0.565, 1) forwards   bottom-anim;
+        animation: 2s cubic-bezier(0, 0.575, 0.565, 1) infinite  bottom-anim;
     }
 
     .tree-two {
@@ -71,21 +72,25 @@
             opacity: .5;
             transform: scale(0);
             transform-origin: 50%;
+            filter: hue-rotate(80deg);
         }
         35% {
             opacity: .8;
             transform: scale(1.05);
             transform-origin: bottom;
+
         }
         65% {
             opacity: 1;
             transform: scale(1);
             transform-origin: bottom;
+
         }
         100% {
             opacity: 1;
             transform: scale(1);
             transform-origin: bottom;
+            filter: hue-rotate(180deg);
         }
     }
 
@@ -170,19 +175,19 @@
         }
     }
 
-    /*@keyframes pulse {*/
-        /*0%{*/
-            /*transform: scale(1) translate(-50%, -50%);*/
-        /*}*/
+    @keyframes pulse {
+        0%{
+            transform: scale(.5) translate(-50%, -50%);
+        }
 
-        /*50%{*/
-            /*transform: scale(1.05) translate(-50%, -50%);*/
-        /*}*/
+        50%{
+            transform: scale(1.05) translate(-50%, -50%);
+        }
 
-        /*100%{*/
-            /*transform: scale(1) translate(-50%, -50%);*/
-        /*}*/
-    /*}*/
+        100%{
+            transform: scale(.95) translate(-50%, -50%);
+        }
+    }
 
 </style>
 
