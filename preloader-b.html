@@ -38,16 +38,13 @@
         transform-style: preserve-3d;
         animation: 2s linear 2.2s infinite pulse;
         transform-origin: 0 50%;
-        /*transition: 1.5s;*/
-    }
+            }
 
 
     .tree {
         fill: #793383;
         opacity: 0;
-        /*transition: 2.5s;*/
-
-    }
+      }
 
     .tree-one {
 
@@ -175,35 +172,6 @@
         }
     }
 
-    /*@keyframes scale-up {*/
-        /*0%  {*/
-            /*opacity: 0;*/
-            /*transform: scale(0.8) rotateY(-100deg) perspective(600px);*/
-            /*transform-origin: 50%;*/
-        /*}*/
-
-        /*100% {*/
-            /*opacity: 1;*/
-            /*transform: scale(1);*/
-            /*transform-origin: 50%;*/
-        /*}*/
-    /*}*/
-
-
-    /*@keyframes scale-up-4 {*/
-        /*0%  {*/
-            /*opacity: 0;*/
-            /*transform: scale(1.05) perspective(600px) rotateY(-140deg);*/
-            /*transform-origin: 50%;*/
-        /*}*/
-
-      /*100% {*/
-            /*opacity: 1;*/
-            /*transform: scale(1);*/
-            /*transform-origin: 50%;*/
-        /*}*/
-    /*}*/
-
     @keyframes pulse {
         0%{
             transform: scale(1) translate(-50%, -50%);
@@ -245,7 +213,20 @@
     </div>
 </div>
 <script>
+    function loadData() {
+        return new Promise((resolve, reject) => {
+            // setTimeout не является частью решения
+            // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
+            setTimeout(resolve, 2000);
+        })
+    }
 
+    loadData()
+        .then(() => {
+            let preloaderEl = document.getElementById('preloader');
+            preloaderEl.classList.add('hidden');
+            preloaderEl.classList.remove('visible');
+        });
 </script>
 </body>
 </html>
